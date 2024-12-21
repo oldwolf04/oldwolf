@@ -1,0 +1,287 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* تصميم الهيدر */
+header {
+    background-color: #333;
+    color: #f5cc4f;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 5;
+    font-size: 3em;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+	font-size:.48cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px; 
+    height: 40px; 
+    background-color:#f5a316; 
+    border-radius: 10%; 
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #fa7325; 
+    transform: scale(1.1); 
+}
+
+/* تصميم الأقسام */
+section {
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background:#fce08e ;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+/* العناوين */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* النصوص في الأقسام */
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* تصميم مميزات الشركة */
+.features ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.features li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #444;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: '✔';
+    color: #ff7043;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+
+/* تصميم السيارات */
+.car-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25%-20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.car-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.car-card .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.car-card .cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* آراء العملاء */
+.testimonial {
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #666;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* العروض */
+.offers {
+    background-color: #c9d15d;
+    border-left: 5px solid #ff7043;
+}
+
+.offers p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* التواصل السريع */
+.contact-us .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-us .cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ff7043;
+}
+
+/* أيقونات الفيسبوك والانستجرام */
+.social-icons a.facebook {
+    color: #7ca6ff;
+}
+
+.social-icons a.instagram {
+    color: #e4405f;
+}
+
+/* تصميم نموذج التسجيل */
+.registration-form {
+    background: ;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #ff7043;
+    outline: none;
+    background-color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}

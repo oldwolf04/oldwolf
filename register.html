@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل</title>
+    <link rel="stylesheet" href="style.css"> 
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Old Wolf Motors</h1>
+        <nav>
+            <a href="about.html">عن الشركة</a>           
+            <a href="register.html">التسجيل</a>
+			<a href="details.html">تفاصيل السيارات</a>
+		    <a href="index.html">الرئيسية</a> 
+        </nav>
+    </header>
+    <main>
+       <section class="registration-form">
+            <h2>إنشاء حساب جديد</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">تأكيد كلمة المرور</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="أعد إدخال كلمة المرور">
+                </div>
+
+                <button type="submit" class="cta-button">تسجيل</button>
+            </form>
+
+            <!-- رسالة الخطأ -->
+            <p id="error-message" style="color:red; display:none;">يرجى التأكد من صحة البيانات المدخلة.</p>
+
+            <!-- رسالة النجاح -->
+            <div id="success-message" style="display:none; color: green;">
+                <h2>تم التسجيل بنجاح!</h2>
+                <p>شكرًا لتسجيلك معنا. سيتم التواصل معك قريبًا.</p>
+            </div>
+       </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Old Wolf Motors. جميع الحقوق محفوظة.</p>
+    </footer>
+
+   
